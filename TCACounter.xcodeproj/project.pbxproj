@@ -12,6 +12,7 @@
 		0AB6FE782A5ECD6F00E7A19E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB6FE772A5ECD6F00E7A19E /* Assets.xcassets */; };
 		0AB6FE7C2A5ECD6F00E7A19E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB6FE7B2A5ECD6F00E7A19E /* Preview Assets.xcassets */; };
 		0AB6FE842A5ECDDF00E7A19E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 0AB6FE832A5ECDDF00E7A19E /* ComposableArchitecture */; };
+		0AB6FE862A5EE6D400E7A19E /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB6FE852A5EE6D400E7A19E /* CounterFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0AB6FE772A5ECD6F00E7A19E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AB6FE792A5ECD6F00E7A19E /* TCACounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TCACounter.entitlements; sourceTree = "<group>"; };
 		0AB6FE7B2A5ECD6F00E7A19E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0AB6FE852A5EE6D400E7A19E /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				0AB6FE772A5ECD6F00E7A19E /* Assets.xcassets */,
 				0AB6FE792A5ECD6F00E7A19E /* TCACounter.entitlements */,
 				0AB6FE7A2A5ECD6F00E7A19E /* Preview Content */,
+				0AB6FE852A5EE6D400E7A19E /* CounterFeature.swift */,
 			);
 			path = TCACounter;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB6FE862A5EE6D400E7A19E /* CounterFeature.swift in Sources */,
 				0AB6FE762A5ECD6C00E7A19E /* ContentView.swift in Sources */,
 				0AB6FE742A5ECD6C00E7A19E /* TCACounterApp.swift in Sources */,
 			);
