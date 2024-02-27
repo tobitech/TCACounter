@@ -8,7 +8,9 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct CounterFeature: ReducerProtocol {
+@Reducer
+struct CounterFeature: Reducer {
+	@ObservableState
 	struct State: Equatable {
 		var count = 0
 	}
@@ -18,16 +20,17 @@ struct CounterFeature: ReducerProtocol {
 		case incrementButtonTapped
 	}
 	
-	
-	func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
-		switch action {
-		case .decrementButtonTapped:
-			state.count -= 1
-			return .none
-			
-		case .incrementButtonTapped:
-			state.count += 1
-			return .none
+	var body: some ReducerOf<Self> {
+		Reduce { state, action in
+			switch action {
+			case .decrementButtonTapped:
+				state.count -= 1
+				return .none
+				
+			case .incrementButtonTapped:
+				state.count += 1
+				return .none
+			}
 		}
 	}
 }
@@ -36,30 +39,28 @@ struct CounterView: View {
 	let store: StoreOf<CounterFeature>
 	
 	var body: some View {
-		WithViewStore(self.store, observe: { $0 }) { viewStore in
-			VStack {
-				Text("\(viewStore.count)")
-					.font(.largeTitle)
-					.padding()
-					.background(Color.black.opacity(0.1))
-					.cornerRadius(10)
-				HStack {
-					Button("-") {
-						viewStore.send(.decrementButtonTapped)
-					}
-					.font(.largeTitle)
-					.padding()
-					.background(Color.black.opacity(0.1))
-					.cornerRadius(10)
-					
-					Button("+") {
-						viewStore.send(.incrementButtonTapped)
-					}
-					.font(.largeTitle)
-					.padding()
-					.background(Color.black.opacity(0.1))
-					.cornerRadius(10)
+		VStack {
+			Text("\(store.count)")
+				.font(.largeTitle)
+				.padding()
+				.background(Color.black.opacity(0.1))
+				.cornerRadius(10)
+			HStack {
+				Button("-") {
+					store.send(.decrementButtonTapped)
 				}
+				.font(.largeTitle)
+				.padding()
+				.background(Color.black.opacity(0.1))
+				.cornerRadius(10)
+				
+				Button("+") {
+					store.send(.incrementButtonTapped)
+				}
+				.font(.largeTitle)
+				.padding()
+				.background(Color.black.opacity(0.1))
+				.cornerRadius(10)
 			}
 		}
 	}
