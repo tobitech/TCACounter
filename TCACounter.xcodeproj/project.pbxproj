@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A03102D2B8E206A00212697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0AB6FE702A5ECD6C00E7A19E /* TCACounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCACounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB6FE732A5ECD6C00E7A19E /* TCACounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCACounterApp.swift; sourceTree = "<group>"; };
 		0AB6FE752A5ECD6C00E7A19E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		0AB6FE722A5ECD6C00E7A19E /* TCACounter */ = {
 			isa = PBXGroup;
 			children = (
+				0A03102D2B8E206A00212697 /* Info.plist */,
 				0AB6FE732A5ECD6C00E7A19E /* TCACounterApp.swift */,
 				0AB6FE752A5ECD6C00E7A19E /* ContentView.swift */,
 				0AB6FE772A5ECD6F00E7A19E /* Assets.xcassets */,
@@ -289,6 +291,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCACounter/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -328,6 +331,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCACounter/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
