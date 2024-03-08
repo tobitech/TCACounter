@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0AA1B2742B9BA79300AA2F48 /* TCACounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1B2732B9BA79300AA2F48 /* TCACounterTests.swift */; };
+		0AA1B27B2B9BAF0D00AA2F48 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1B27A2B9BAF0D00AA2F48 /* NumberFactClient.swift */; };
 		0AB6FE742A5ECD6C00E7A19E /* TCACounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB6FE732A5ECD6C00E7A19E /* TCACounterApp.swift */; };
 		0AB6FE762A5ECD6C00E7A19E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB6FE752A5ECD6C00E7A19E /* ContentView.swift */; };
 		0AB6FE782A5ECD6F00E7A19E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB6FE772A5ECD6F00E7A19E /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		0A03102D2B8E206A00212697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0AA1B2712B9BA79300AA2F48 /* TCACounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCACounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA1B2732B9BA79300AA2F48 /* TCACounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCACounterTests.swift; sourceTree = "<group>"; };
+		0AA1B27A2B9BAF0D00AA2F48 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
 		0AB6FE702A5ECD6C00E7A19E /* TCACounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCACounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB6FE732A5ECD6C00E7A19E /* TCACounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCACounterApp.swift; sourceTree = "<group>"; };
 		0AB6FE752A5ECD6C00E7A19E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				0AB6FE792A5ECD6F00E7A19E /* TCACounter.entitlements */,
 				0AB6FE7A2A5ECD6F00E7A19E /* Preview Content */,
 				0AB6FE852A5EE6D400E7A19E /* CounterFeature.swift */,
+				0AA1B27A2B9BAF0D00AA2F48 /* NumberFactClient.swift */,
 			);
 			path = TCACounter;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				0AB6FE862A5EE6D400E7A19E /* CounterFeature.swift in Sources */,
 				0AB6FE762A5ECD6C00E7A19E /* ContentView.swift in Sources */,
 				0AB6FE742A5ECD6C00E7A19E /* TCACounterApp.swift in Sources */,
+				0AA1B27B2B9BAF0D00AA2F48 /* NumberFactClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
